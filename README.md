@@ -1,5 +1,9 @@
 # Swift Testing: @Suite/@Test silently not discovered in generic specialization extensions
 
+## Swift Issue
+
+Filed as [swiftlang/swift-testing#1508](https://github.com/swiftlang/swift-testing/issues/1508)
+
 ## Description
 
 `@Test` compiles without error inside `extension Container<Int>`, but the test is silently invisible to `swift test list` and never executes. No warning or diagnostic is emitted.
